@@ -25,17 +25,19 @@
         box-sizing: border-box;
       }
 
-      body {
-        font-family: "Poppins", sans-serif;
-        background: var(--bg-gradient);
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--text-color);
-        perspective: 1000px;
-      }
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-gradient);
+  min-height: 100vh;     /* allow it to grow */
+  overflow-y: auto;      /* enable vertical scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* important for scrolling */
+  color: var(--text-color);
+  perspective: 1000px;
+  padding: 40px 0;       /* optional spacing */
+}
+
 
       /* Particle Background */
       #particles {
@@ -191,10 +193,6 @@
         object-fit: cover;
         border-radius: 2px;
       }
-      .screen-letter {
-  height: 100vh;
-  overflow-y: auto;
-}
 
       /* Love Letter */
       .letter-content {
@@ -451,5 +449,6 @@
     </script>
   </body>
 </html>
+
 
 
