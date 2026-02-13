@@ -191,6 +191,10 @@
         object-fit: cover;
         border-radius: 2px;
       }
+      .screen-letter {
+  height: 100vh;
+  overflow-y: auto;
+}
 
       /* Love Letter */
       .letter-content {
@@ -232,30 +236,6 @@
       #noBtn {
         background: #4a4a4a;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      }
-
-      /* Music Control */
-      .music-control {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        z-index: 100;
-        font-size: 24px;
-        transition: all 0.3s;
-      }
-
-      .music-control:hover {
-        background: rgba(255, 255, 255, 0.3);
-        transform: rotate(360deg);
       }
     </style>
   </head>
@@ -300,8 +280,6 @@
       <div class="letter-content">
         <span id="typewriter-text"></span><span class="cursor"></span>
       </div>
-      <br>
-      <br>
       <button
         class="btn"
         id="letter-next-btn"
@@ -473,4 +451,5 @@
     </script>
   </body>
 </html>
+
 
